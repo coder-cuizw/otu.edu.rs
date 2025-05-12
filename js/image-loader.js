@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
         'campus-main': 'images/facilities/campus-main.jpg',
         'campus-innovation': 'images/facilities/campus-innovation.jpg',
         'campus-library': 'images/facilities/campus-library.jpg',
-        'campus-labs': 'images/facilities/campus-labs.jpg',
     };
 
     // 将所有img标签中的src替换为实际的图片URL
@@ -55,32 +54,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
-
-    // 替换合作伙伴logo为本地文件
-    document.querySelectorAll('img[alt*="Partner"]').forEach((img, index) => {
-        // 使用新创建的合作伙伴logo
-        img.setAttribute('src', 'images/partners/partner-logo.svg');
-        
-        // 添加合作伙伴编号
-        const svgDoc = img.contentDocument;
-        if (svgDoc) {
-            // 如果SVG已加载，直接修改
-            updatePartnerNumber(svgDoc, index + 1);
-        } else {
-            // 如果SVG尚未加载，等待加载完成后修改
-            img.addEventListener('load', function() {
-                if (img.contentDocument) {
-                    updatePartnerNumber(img.contentDocument, index + 1);
-                }
-            });
-        }
-    });
-    
-    // 辅助函数：更新合作伙伴编号
-    function updatePartnerNumber(svgDoc, number) {
-        const textElement = svgDoc.getElementById('partnerNumber');
-        if (textElement) {
-            textElement.textContent = `LOGO ${number}`;
-        }
-    }
 }); 
