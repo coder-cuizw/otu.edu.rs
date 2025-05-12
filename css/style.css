@@ -69,6 +69,12 @@ header {
     color: white;
 }
 
+.logo-img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
 .otu-logo {
     font-weight: 700;
     font-size: 1.5rem;
