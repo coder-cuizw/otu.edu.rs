@@ -9,26 +9,26 @@ document.addEventListener('DOMContentLoaded', function() {
         // 轮播图片
         'campus': 'images/campus/campus.jpg',
         'students': 'images/campus/students.jpg',
-        'research': 'images/campus/research.jpg',
-        
+        // 'research': 'images/campus/research.jpg',
+
         // 关于OTU图片
         'about-otu': 'images/campus/about-otu.jpg',
-        
+
         // 专业课程图片
         'program-cs': 'images/programs/cs.jpg',
         'program-cybersecurity': 'images/programs/cybersecurity.jpg',
         'program-data-science': 'images/programs/data-science.jpg',
-        
+
         // 学生证言图片
         'testimonial-1': 'images/testimonials/testimonial-1.jpg',
         'testimonial-2': 'images/testimonials/testimonial-2.jpg',
         'testimonial-3': 'images/testimonials/testimonial-3.jpg',
-        
+
         // 学校领导图片
         'leadership-1': 'images/leadership/leadership-1.jpg',
         'leadership-2': 'images/leadership/leadership-2.jpg',
         'leadership-3': 'images/leadership/leadership-3.jpg',
-        
+
         // 校园设施图片
         'campus-main': 'images/facilities/campus-main.jpg',
         'campus-innovation': 'images/facilities/campus-innovation.jpg',
@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const altText = img.getAttribute('alt');
         if (altText) {
             // 从alt文本中提取关键词
-            const key = Object.keys(imageUrls).find(key => 
+            const key = Object.keys(imageUrls).find(key =>
                 altText.toLowerCase().includes(key.toLowerCase().replace('-', ' '))
             );
-            
+
             if (key && imageUrls[key]) {
                 // 检查是否已经是绝对路径
                 const currentSrc = img.getAttribute('src');
@@ -54,4 +54,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
-}); 
+});
