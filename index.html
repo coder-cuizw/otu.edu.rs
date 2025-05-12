@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Tech University - Serbia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <span class="otu-logo">OTU</span> Online Tech University
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+                            <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+                            <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                            <li class="nav-item"><a class="nav-link" href="campus-life.html">Campus Life</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-overlay"></div>
+                    <img src="images/campus.jpg" class="d-block w-100" alt="University Campus">
+                    <div class="carousel-caption">
+                        <h1>Welcome to Online Tech University</h1>
+                        <p>Shaping the digital leaders of tomorrow in the heart of Serbia</p>
+                        <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-overlay"></div>
+                    <img src="images/students.jpg" class="d-block w-100" alt="Students">
+                    <div class="carousel-caption">
+                        <h1>World-Class Education</h1>
+                        <p>Innovative programs designed to meet the demands of the digital age</p>
+                        <a href="academics.html" class="btn btn-primary">Explore Programs</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-overlay"></div>
+                    <img src="images/research.jpg" class="d-block w-100" alt="Research">
+                    <div class="carousel-caption">
+                        <h1>Cutting-Edge Research</h1>
+                        <p>Pioneering solutions for tomorrow's technological challenges</p>
+                        <a href="research.html" class="btn btn-primary">Discover Research</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About OTU</h2>
+                    <p>Founded in 2012, Online Tech University (OTU) is Serbia's premier institution for technology education and innovation. Located in Belgrade, our campus combines modern infrastructure with a commitment to digital excellence.</p>
+                    <p>At OTU, we prepare students for success in the rapidly evolving tech landscape through hands-on learning, industry partnerships, and cutting-edge research opportunities.</p>
+                    <a href="about.html" class="btn btn-outline-primary">Learn More</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/about-otu.jpg" alt="About OTU" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Featured Programs</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/program-cs.jpg" class="card-img-top" alt="Computer Science">
+                        <div class="card-body">
+                            <h5 class="card-title">Computer Science</h5>
+                            <p class="card-text">Comprehensive education in algorithms, programming languages, and software development with specializations in AI and machine learning.</p>
+                            <a href="academics.html#cs" class="btn btn-sm btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/program-cybersecurity.jpg" class="card-img-top" alt="Cybersecurity">
+                        <div class="card-body">
+                            <h5 class="card-title">Cybersecurity</h5>
+                            <p class="card-text">Develop expertise in network security, ethical hacking, digital forensics, and security policy to protect critical systems.</p>
+                            <a href="academics.html#cybersecurity" class="btn btn-sm btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/program-data-science.jpg" class="card-img-top" alt="Data Science">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Science</h5>
+                            <p class="card-text">Learn to extract insights from complex datasets using statistical analysis, machine learning, and data visualization.</p>
+                            <a href="academics.html#data-science" class="btn btn-sm btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="academics.html" class="btn btn-outline-primary">View All Programs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Events Section -->
+    <section class="news-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">News & Events</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card news-card">
+                        <div class="card-body">
+                            <h5 class="card-title">OTU Hosts International Tech Conference</h5>
+                            <p class="card-date">October 15, 2023</p>
+                            <p class="card-text">Leading industry experts gather at OTU to discuss emerging technologies and innovations in the digital sector.</p>
+                            <a href="#" class="card-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card news-card">
+                        <div class="card-body">
+                            <h5 class="card-title">New AI Research Center Launched</h5>
+                            <p class="card-date">September 28, 2023</p>
+                            <p class="card-text">OTU unveils a state-of-the-art Artificial Intelligence Research Center to advance innovation in machine learning.</p>
+                            <a href="#" class="card-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card news-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Student Team Wins National Hackathon</h5>
+                            <p class="card-date">September 10, 2023</p>
+                            <p class="card-text">OTU students secure first place at the national hackathon with their innovative healthcare application.</p>
+                            <a href="#" class="card-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card news-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Fall Semester Enrollment Now Open</h5>
+                            <p class="card-date">August 25, 2023</p>
+                            <p class="card-text">Applications are now being accepted for the upcoming fall semester. Early bird discounts available until September 15.</p>
+                            <a href="#" class="card-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="news.html" class="btn btn-outline-primary">View All News</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-4">
+                    <div class="stat-item">
+                        <i class="fas fa-user-graduate fa-3x mb-3"></i>
+                        <h3>3,500+</h3>
+                        <p>Students</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="stat-item">
+                        <i class="fas fa-chalkboard-teacher fa-3x mb-3"></i>
+                        <h3>250+</h3>
+                        <p>Faculty Members</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="stat-item">
+                        <i class="fas fa-flask fa-3x mb-3"></i>
+                        <h3>120+</h3>
+                        <p>Research Projects</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="stat-item">
+                        <i class="fas fa-globe fa-3x mb-3"></i>
+                        <h3>45+</h3>
+                        <p>Partner Countries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Student Testimonials</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card testimonial-card">
+                        <div class="card-body">
+                            <p class="card-text">"OTU has transformed my career prospects. The hands-on approach to learning and supportive faculty helped me secure a position at a leading tech company before graduation."</p>
+                            <div class="testimonial-author">
+                                <img src="images/testimonial-1.jpg" alt="Student Testimonial" class="rounded-circle">
+                                <div>
+                                    <h5>Ana Petrović</h5>
+                                    <p>Computer Science, Class of 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card testimonial-card">
+                        <div class="card-body">
+                            <p class="card-text">"The international environment at OTU is incredible. I've collaborated with students from over 20 countries, building both technical skills and global connections."</p>
+                            <div class="testimonial-author">
+                                <img src="images/testimonial-2.jpg" alt="Student Testimonial" class="rounded-circle">
+                                <div>
+                                    <h5>Milan Novak</h5>
+                                    <p>Data Science, Class of 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card testimonial-card">
+                        <div class="card-body">
+                            <p class="card-text">"The research opportunities at OTU are unmatched. Working alongside professors on cutting-edge projects gave me invaluable experience that set me apart in the job market."</p>
+                            <div class="testimonial-author">
+                                <img src="images/testimonial-3.jpg" alt="Student Testimonial" class="rounded-circle">
+                                <div>
+                                    <h5>Jelena Marković</h5>
+                                    <p>Cybersecurity, Class of 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 bg-light">
+        <div class="container text-center">
+            <h2>Ready to Shape Your Future in Technology?</h2>
+            <p class="lead mb-4">Join our community of innovators and problem-solvers at Online Tech University.</p>
+            <div class="cta-buttons">
+                <a href="admissions.html" class="btn btn-primary me-2">Apply Now</a>
+                <a href="campus-tours.html" class="btn btn-outline-primary">Schedule a Campus Tour</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>Online Tech University</h5>
+                    <p>Terazije 23, 11000 Belgrade<br>Serbia</p>
+                    <p>Phone: +381 11 123 4567<br>Email: info@otu.edu.rs</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Programs</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 mb-4">
+                    <h5>Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Student Portal</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Career Services</a></li>
+                        <li><a href="#">IT Support</a></li>
+                        <li><a href="#">Campus Map</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Stay Connected</h5>
+                    <p>Subscribe to our newsletter for updates</p>
+                    <form class="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="copyright">© 2023 Online Tech University. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <ul class="footer-bottom-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
